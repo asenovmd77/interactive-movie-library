@@ -5,48 +5,95 @@
 }
 
 body {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(9, 1fr);
 }
 
 header {
-    background-color: #A65DE9;
-    grid-column: 1 / -1;
-    grid-row: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+        background-color: #A65DE9;
+        grid-column: 1 / -1;
+        grid-row: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
 }
 
 aside{
-    background-color: #C18EF0;
-    grid-column: 1 / 4;
-    grid-row: 2 / -1;
+        background-color: #C18EF0;
+        grid-column: 1 / 4;
+        grid-row: 2 / -1;
 }
 
 main{
-    background-color: #9640E5;
-    grid-column: 4 / -1;
-    grid-row: 2 / -1;
+        background-color: #9640E5;
+        grid-column: 4 / -1;
+        grid-row: 2 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
 }
 
 h1{
-    color: white;
+        color: white;
+}
+
+h3, h4 {
+        margin: .5rem 0;
+        color: white;
 }
 
 input {
-    padding-left: .5rem;
-    width: 20rem;
-    height: 2.3rem;
-    border-radius: 15px;
+        padding-left: .5rem;
+        width: 20rem;
+        height: 2.3rem;
+        border-radius: 15px;
 }
 
 .search-button {
-    margin-left: .5rem;
-    border-radius: 15px;
-    padding: .5rem 1rem;
+        margin-left: .5rem;
+        border-radius: 15px;
+        padding: .5rem 1rem;
+}
+
+.movie-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #8A2BE2;
+        width: 200px;
+        height: 450px;
+        margin: 2.4rem;
+}
+
+.movieh-card-poster{
+        object-fit: cover;
+        width: 100%;
+}
+
+.movie-card-buttons{
+        display: flex;
+        justify-content: space-around;
+}
+
+.details-btn {
+        border-radius: 5px;
+        padding: .2rem;
+        color: white;
+        background-color: #3ca1c3;
+}
+
+.favorites-btn {
+        border-radius: 5px;
+        padding: .2rem;
+        color: white;
+        background-color: #00ff80;
+}
+
+img{
+        width: 200px;
+        height: 300px;
 }
