@@ -3,3 +3,50 @@
         padding: 0;
         box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+header {
+    background-color: #A65DE9;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+aside{
+    background-color: #C18EF0;
+    grid-column: 1 / 4;
+    grid-row: 2 / -1;
+}
+
+main{
+    background-color: #9640E5;
+    grid-column: 4 / -1;
+    grid-row: 2 / -1;
+}
+
+h1{
+    color: white;
+}
+
+input {
+    padding-left: .5rem;
+    width: 20rem;
+    height: 2.3rem;
+    border-radius: 15px;
+}
+
+.search-button {
+    margin-left: .5rem;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+}
